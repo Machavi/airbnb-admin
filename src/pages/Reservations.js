@@ -1,4 +1,4 @@
-﻿// ===========================================
+// ===========================================
 // Reservations Page - View and manage bookings
 // ===========================================
 import React, { useState, useEffect } from 'react';

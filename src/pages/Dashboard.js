@@ -1,4 +1,4 @@
-﻿// ===========================================
+// ===========================================
 // Dashboard Page - View all property listings
 // ===========================================
 import React, { useState, useEffect } from 'react';

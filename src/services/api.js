@@ -1,4 +1,4 @@
-﻿/**
+/**
  * api.js - API service for Airbnb Admin Dashboard
  * Connects to deployed backend on Render.com
  */

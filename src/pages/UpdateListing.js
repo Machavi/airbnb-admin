@@ -1,4 +1,4 @@
-﻿// ===========================================
+// ===========================================
 // Update Listing Page - Edit existing property
 // ===========================================
 import React, { useState, useEffect } from 'react';

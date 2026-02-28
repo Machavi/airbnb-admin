@@ -1,4 +1,4 @@
-﻿// ===========================================
+// ===========================================
 // Header Component - Top navigation bar
 // ===========================================
 import React, { useState, useEffect, useRef } from 'react';
