@@ -5,7 +5,7 @@
 
 import axios from "axios";
 
-const API_BASE_URL = "https://YOUR_RENDER_URL.onrender.com/api";
+const API_BASE_URL = "https://airbnb-backend-iu2c.onrender.com/api";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -39,6 +39,7 @@ export const loginUser = async (email, password) => {
 };
 
 export const getUserProfile = async () => (await api.get("/users/profile")).data;
+export const getProfile = async () => (await api.get("/users/profile")).data;
 export const logoutUser = () => { localStorage.removeItem("token"); localStorage.removeItem("user"); };
 export const isLoggedIn = () => localStorage.getItem("token") !== null;
 export const getStoredUser = () => { const u = localStorage.getItem("user"); return u ? JSON.parse(u) : null; };
