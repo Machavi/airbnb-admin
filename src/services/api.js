@@ -38,13 +38,14 @@ export const loginUser = async (email, password) => {
   return res.data;
 };
 
-export const getUserProfile = async () => (await api.get("/users/profile")).data;
 export const getProfile = async () => (await api.get("/users/profile")).data;
+export const getUserProfile = async () => (await api.get("/users/profile")).data;
 export const logoutUser = () => { localStorage.removeItem("token"); localStorage.removeItem("user"); };
 export const isLoggedIn = () => localStorage.getItem("token") !== null;
 export const getStoredUser = () => { const u = localStorage.getItem("user"); return u ? JSON.parse(u) : null; };
 export const createAccommodation = async (data) => (await api.post("/accommodations", data)).data;
 export const getAccommodations = async () => (await api.get("/accommodations")).data;
+export const getAccommodation = async (id) => (await api.get("/accommodations/" + id)).data;
 export const getAccommodationById = async (id) => (await api.get("/accommodations/" + id)).data;
 export const updateAccommodation = async (id, data) => (await api.put("/accommodations/" + id, data)).data;
 export const deleteAccommodation = async (id) => (await api.delete("/accommodations/" + id)).data;
